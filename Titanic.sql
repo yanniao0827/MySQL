@@ -1,5 +1,6 @@
 create database my_train_titanic;
 use my_train_titanic;
+
 CREATE TABLE IF NOT EXISTS tickets(
   id INT(11) primary key, 
   ticket VARCHAR(100), 
@@ -1608,3 +1609,7 @@ INSERT INTO passengers(id, survived, pclass, name, sex, age, sibsp, parch, cabin
 INSERT INTO passengers(id, survived, pclass, name, sex, age, sibsp, parch, cabin, ticketId, portId) VALUES (889, 0, 3, 'Johnston, Miss. Catherine Helen "Carrie"', 'female', NULL, 1, 2, NULL, 615, 1);
 INSERT INTO passengers(id, survived, pclass, name, sex, age, sibsp, parch, cabin, ticketId, portId) VALUES (890, 1, 1, 'Behr, Mr. Karl Howell', 'male', 26.0, 0, 0, 'C148', 680, 2);
 INSERT INTO passengers(id, survived, pclass, name, sex, age, sibsp, parch, cabin, ticketId, portId) VALUES (891, 0, 3, 'Dooley, Mr. Patrick', 'male', 32.0, 0, 0, NULL, 681, 3);
+
+select * from tickets;
+select * from passengers;
+select * from ports;
